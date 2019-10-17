@@ -84,6 +84,7 @@ public class ScheduleFragment extends Fragment {
     @Override
     public void onActivityCreated(Bundle b){
         super.onActivityCreated(b);
+
         monday[0]=(TextView) getView().findViewById(R.id.monday0);
         monday[1]=(TextView) getView().findViewById(R.id.monday1);
         monday[2]=(TextView) getView().findViewById(R.id.monday2);
@@ -220,11 +221,9 @@ public class ScheduleFragment extends Fragment {
                 while(count<jsonArray.length()){
                     JSONObject object = jsonArray.getJSONObject(count);
                     courseID = object.getInt("courseID");
-
                     courseProfessor = object.getString("courseProfessor");
                     courseTime = object.getString("courseTime");
                     courseTitle = object.getString("courseTitle");
-
                     schedule.addSchedule(courseTime,courseTitle,courseProfessor);
                     count++;
                 }

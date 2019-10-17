@@ -23,7 +23,7 @@ public class Schedule {
     public void addSchedule(String scheduleText){
         int temp;
         //Mon:[2][3][4]
-        if((temp=scheduleText.indexOf("Mon"))>-1){
+        if((temp=scheduleText.indexOf("Mon")) > -1){
             temp +=2;
             int startPoint = temp;
             int endPoint = temp;
@@ -38,7 +38,7 @@ public class Schedule {
             }
         }
 
-        if((temp=scheduleText.indexOf("Tue"))>-1){
+        if((temp=scheduleText.indexOf("Tue")) > -1){
             temp +=2;
             int startPoint = temp;
             int endPoint = temp;
@@ -53,7 +53,7 @@ public class Schedule {
             }
         }
 
-        if((temp=scheduleText.indexOf("Wed"))>-1){
+        if((temp=scheduleText.indexOf("Wed")) > -1){
             temp +=2;
             int startPoint = temp;
             int endPoint = temp;
@@ -67,7 +67,7 @@ public class Schedule {
                 }
             }
         }
-        if((temp=scheduleText.indexOf("Thu"))>-1){
+        if((temp=scheduleText.indexOf("Thu")) > -1){
             temp +=2;
             int startPoint = temp;
             int endPoint = temp;
@@ -81,7 +81,7 @@ public class Schedule {
                 }
             }
         }
-        if((temp=scheduleText.indexOf("Fri"))>-1){
+        if((temp=scheduleText.indexOf("Fri")) > -1){
             temp +=2;
             int startPoint = temp;
             int endPoint = temp;
@@ -276,6 +276,7 @@ public class Schedule {
 
     public void setting (TextView[] monday, TextView[] tuesday, TextView[] wednesday, TextView[] thursday, TextView[] friday, Context context){
         for(int i=0;i<14;i++){
+
             if(!this.monday[i].equals("")){
                 monday[i].setText(this.monday[i]);
                 monday[i].setBackgroundColor(context.getResources().getColor(R.color.colorPrimary));
