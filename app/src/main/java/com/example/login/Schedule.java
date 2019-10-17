@@ -21,12 +21,13 @@ public class Schedule {
         }
     }
     public void addSchedule(String scheduleText){
-        int temp; //Mon[3][4][5]
+        int temp;
+        //Mon:[2][3][4]
         if((temp=scheduleText.indexOf("Mon"))>-1){
             temp +=2;
             int startPoint = temp;
             int endPoint = temp;
-            for(int i = temp; i<scheduleText.length()&&scheduleText.charAt(i)!=':';i++){
+            for(int i = temp; i<scheduleText.length() && scheduleText.charAt(i) != ':'; i++){
                 if(scheduleText.charAt(i)=='['){
                     startPoint=i;
                 }
@@ -185,6 +186,7 @@ public class Schedule {
                 }
             }
         }
+
         return true;
     }
 
@@ -195,18 +197,19 @@ public class Schedule {
         } else {
             professor = "(" + courseProfessor + ")";
         }
-        int temp; //Mon[3][4][5]
+        int temp;
+
         if((temp=scheduleText.indexOf("Mon"))>-1){
             temp +=2;
             int startPoint = temp;
             int endPoint = temp;
-            for(int i = temp; i<scheduleText.length()&&scheduleText.charAt(i)!=':';i++){
+            for(int i = temp; i<scheduleText.length()&&scheduleText.charAt(i)!=':'; i++){
                 if(scheduleText.charAt(i)=='['){
                     startPoint=i;
                 }
                 if(scheduleText.charAt(i)==']'){
                     endPoint=i;
-                    monday[Integer.parseInt(scheduleText.substring(startPoint+1,endPoint))]=courseTitle+professor;
+                    monday[Integer.parseInt(scheduleText.substring(startPoint+1,endPoint))] = courseTitle + professor;
                 }
             }
         }
@@ -221,7 +224,7 @@ public class Schedule {
                 }
                 if(scheduleText.charAt(i)==']'){
                     endPoint=i;
-                    tuesday[Integer.parseInt(scheduleText.substring(startPoint+1,endPoint))]=courseTitle+professor;
+                    tuesday[Integer.parseInt(scheduleText.substring(startPoint+1,endPoint))]=courseTitle + professor;
                 }
             }
         }
@@ -236,7 +239,7 @@ public class Schedule {
                 }
                 if(scheduleText.charAt(i)==']'){
                     endPoint=i;
-                    wednesday[Integer.parseInt(scheduleText.substring(startPoint+1,endPoint))]=courseTitle+professor;
+                    wednesday[Integer.parseInt(scheduleText.substring(startPoint+1,endPoint))]=courseTitle + professor;
                 }
             }
         }
@@ -250,7 +253,7 @@ public class Schedule {
                 }
                 if(scheduleText.charAt(i)==']'){
                     endPoint=i;
-                    thursday[Integer.parseInt(scheduleText.substring(startPoint+1,endPoint))]=courseTitle+professor;
+                    thursday[Integer.parseInt(scheduleText.substring(startPoint+1,endPoint))]=courseTitle + professor;
                 }
             }
         }
@@ -264,7 +267,7 @@ public class Schedule {
                 }
                 if(scheduleText.charAt(i)==']'){
                     endPoint=i;
-                    friday[Integer.parseInt(scheduleText.substring(startPoint+1,endPoint))]=courseTitle+professor;
+                    friday[Integer.parseInt(scheduleText.substring(startPoint+1,endPoint))]=courseTitle + professor;
                 }
             }
         }
@@ -278,20 +281,20 @@ public class Schedule {
                 monday[i].setBackgroundColor(context.getResources().getColor(R.color.colorPrimary));
             }
             if(!this.tuesday[i].equals("")){
-                monday[i].setText(this.tuesday[i]);
-                monday[i].setBackgroundColor(context.getResources().getColor(R.color.colorPrimary));
+                tuesday[i].setText(this.tuesday[i]);
+                tuesday[i].setBackgroundColor(context.getResources().getColor(R.color.colorPrimary));
             }
             if(!this.wednesday[i].equals("")){
-                monday[i].setText(this.wednesday[i]);
-                monday[i].setBackgroundColor(context.getResources().getColor(R.color.colorPrimary));
+                wednesday[i].setText(this.wednesday[i]);
+                wednesday[i].setBackgroundColor(context.getResources().getColor(R.color.colorPrimary));
             }
             if(!this.thursday[i].equals("")){
-                monday[i].setText(this.thursday[i]);
-                monday[i].setBackgroundColor(context.getResources().getColor(R.color.colorPrimary));
+                thursday[i].setText(this.thursday[i]);
+                thursday[i].setBackgroundColor(context.getResources().getColor(R.color.colorPrimary));
             }
             if(!this.friday[i].equals("")){
-                monday[i].setText(this.friday[i]);
-                monday[i].setBackgroundColor(context.getResources().getColor(R.color.colorPrimary));
+                friday[i].setText(this.friday[i]);
+                friday[i].setBackgroundColor(context.getResources().getColor(R.color.colorPrimary));
             }
         }
     }

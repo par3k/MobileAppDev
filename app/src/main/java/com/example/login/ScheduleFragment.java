@@ -1,5 +1,6 @@
 package com.example.login;
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.net.Uri;
 import android.os.AsyncTask;
@@ -73,11 +74,11 @@ public class ScheduleFragment extends Fragment {
         }
     }
 
-    private TextView monday[]=new TextView[14];
-    private TextView tuesday[]=new TextView[14];
-    private TextView wednesday[]=new TextView[14];
-    private TextView thursday[]=new TextView[14];
-    private TextView friday[]=new TextView[14];
+    private TextView monday[] = new TextView[14];
+    private TextView tuesday[] = new TextView[14];
+    private TextView wednesday[] = new TextView[14];
+    private TextView thursday[] = new TextView[14];
+    private TextView friday[] = new TextView[14];
     private Schedule schedule = new Schedule();
 
     @Override
@@ -163,20 +164,24 @@ public class ScheduleFragment extends Fragment {
 
     class BackgroundTask extends AsyncTask<Void, Void, String> {
         String target ;
+        ProgressDialog dialog = new ProgressDialog(getActivity());
 
         @Override
         protected void onPreExecute(){
+
             try{
                 target = "https://bakhoijae.cafe24.com/ScheduleList.php?userID=" + URLEncoder.encode(MainActivity.userID,"UTF-8");
-
+                dialog.setMessage("Loading..");
+                dialog.show();
             }catch (Exception e){
                 e.printStackTrace();
-            }
+            }dialog.dismiss();
         }
 
         @Override
         protected String doInBackground(Void... voids) {
             try{
+
                 URL url = new URL(target);
                 HttpURLConnection httpURLConnection = (HttpURLConnection)url.openConnection();
                 InputStream inputStream = httpURLConnection.getInputStream();
@@ -211,12 +216,15 @@ public class ScheduleFragment extends Fragment {
                 String courseTime;
                 String courseTitle;
                 int courseID;
+
                 while(count<jsonArray.length()){
                     JSONObject object = jsonArray.getJSONObject(count);
                     courseID = object.getInt("courseID");
+
                     courseProfessor = object.getString("courseProfessor");
                     courseTime = object.getString("courseTime");
                     courseTitle = object.getString("courseTitle");
+
                     schedule.addSchedule(courseTime,courseTitle,courseProfessor);
                     count++;
                 }
