@@ -83,24 +83,16 @@ public class CourseFragment extends Fragment { //코스리스트 버튼 누르�
         }
     }
 
-
-
-
-
     private String courseUniversity = "";
-
     private ListView courseListView;
     private CourseListAdapter adapter;
     private List<Course> courseList;
-
 
     @Override
     public void onActivityCreated(Bundle b){
         super.onActivityCreated(b);
 
         final RadioGroup courseUniversityGroup = (RadioGroup) getView().findViewById(R.id.courseUniversityGroup);
-
-
         courseUniversityGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
@@ -138,7 +130,6 @@ public class CourseFragment extends Fragment { //코스리스트 버튼 누르�
         }
     }
 
-
     @Override
     public void onDetach() {
         super.onDetach();
@@ -167,11 +158,9 @@ public class CourseFragment extends Fragment { //코스리스트 버튼 누르�
         protected void onPreExecute() {
             try{
                 target = "https://bakhoijae.cafe24.com/CourseList.php?courseUniversity=" +URLEncoder.encode(courseUniversity,"UTF-8");
-
             } catch(Exception e){
                 e.printStackTrace();
             }
-
         }
 
         @Override
@@ -207,8 +196,8 @@ public class CourseFragment extends Fragment { //코스리스트 버튼 누르�
                 courseList.clear();
                 JSONObject jsonObject = new JSONObject(result);
                 JSONArray jsonArray = jsonObject.getJSONArray("response");
-                int count = 0;
 
+                int count = 0;
                 int courseID;
                 String courseUniversity;
                 String courseArea;

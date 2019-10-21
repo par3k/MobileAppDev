@@ -10,7 +10,7 @@ public class AddRequest extends StringRequest {
     final static private String URL = "https://bakhoijae.cafe24.com/CourseAdd.php"; //MyList에 데이터 저장
     private Map<String,String> parameters;
 
-    public AddRequest(String userID, String courseID,Response.Listener<String> listener){
+    public AddRequest(String userID, String courseID, Response.Listener<String> listener){
         super(Method.POST,URL,listener,null);
         parameters = new HashMap<>();
         parameters.put("userID",userID);

@@ -33,7 +33,7 @@ public class Schedule {
                 }
                 if(scheduleText.charAt(i)==']'){
                     endPoint=i;
-                    monday[Integer.parseInt(scheduleText.substring(startPoint+1,endPoint))]="Course";
+                    monday[Integer.parseInt(scheduleText.substring(startPoint+1,endPoint))]="수";
                 }
             }
         }
@@ -42,13 +42,13 @@ public class Schedule {
             temp +=2;
             int startPoint = temp;
             int endPoint = temp;
-            for(int i = temp; i<scheduleText.length()&&scheduleText.charAt(i)!=':';i++){
+            for(int i = temp; i<scheduleText.length() && scheduleText.charAt(i)!=':'; i++){
                 if(scheduleText.charAt(i)=='['){
                     startPoint=i;
                 }
                 if(scheduleText.charAt(i)==']'){
                     endPoint=i;
-                    tuesday[Integer.parseInt(scheduleText.substring(startPoint+1,endPoint))]="Course";
+                    tuesday[Integer.parseInt(scheduleText.substring(startPoint+1,endPoint))]="수업";
                 }
             }
         }
@@ -57,13 +57,13 @@ public class Schedule {
             temp +=2;
             int startPoint = temp;
             int endPoint = temp;
-            for(int i = temp; i<scheduleText.length()&&scheduleText.charAt(i)!=':';i++){
+            for(int i = temp; i<scheduleText.length() && scheduleText.charAt(i)!=':'; i++){
                 if(scheduleText.charAt(i)=='['){
                     startPoint=i;
                 }
                 if(scheduleText.charAt(i)==']'){
                     endPoint=i;
-                    wednesday[Integer.parseInt(scheduleText.substring(startPoint+1,endPoint))]="Course";
+                    wednesday[Integer.parseInt(scheduleText.substring(startPoint+1,endPoint))]="수업";
                 }
             }
         }
@@ -77,7 +77,7 @@ public class Schedule {
                 }
                 if(scheduleText.charAt(i)==']'){
                     endPoint=i;
-                    thursday[Integer.parseInt(scheduleText.substring(startPoint+1,endPoint))]="Course";
+                    thursday[Integer.parseInt(scheduleText.substring(startPoint+1,endPoint))]="수업";
                 }
             }
         }
@@ -91,7 +91,7 @@ public class Schedule {
                 }
                 if(scheduleText.charAt(i)==']'){
                     endPoint=i;
-                    friday[Integer.parseInt(scheduleText.substring(startPoint+1,endPoint))]="Course";
+                    friday[Integer.parseInt(scheduleText.substring(startPoint+1,endPoint))]="수업";
                 }
             }
         }
@@ -190,60 +190,60 @@ public class Schedule {
         return true;
     }
 
-    public void addSchedule(String scheduleText,String courseTitle,String courseProfessor){
+    public void addSchedule(String scheduleText, String courseTitle, String courseProfessor){
         String professor;
         if(courseProfessor.equals("")){
-            professor="";
+            professor = "";
         } else {
             professor = "(" + courseProfessor + ")";
         }
         int temp;
-
-        if((temp=scheduleText.indexOf("Mon"))>-1){
+        //Mon:[2][3][4]
+        if((temp=scheduleText.indexOf("Mon")) > -1){
             temp +=2;
             int startPoint = temp;
             int endPoint = temp;
-            for(int i = temp; i<scheduleText.length()&&scheduleText.charAt(i)!=':'; i++){
+            for(int i = temp; i<scheduleText.length() && scheduleText.charAt(i) != ':'; i++){
                 if(scheduleText.charAt(i)=='['){
                     startPoint=i;
                 }
                 if(scheduleText.charAt(i)==']'){
                     endPoint=i;
-                    monday[Integer.parseInt(scheduleText.substring(startPoint+1,endPoint))] = courseTitle + professor;
+                    monday[Integer.parseInt(scheduleText.substring(startPoint+1,endPoint))]= courseTitle + professor;
                 }
             }
         }
 
-        if((temp=scheduleText.indexOf("Tue"))>-1){
+        if((temp=scheduleText.indexOf("Tue")) > -1){
             temp +=2;
             int startPoint = temp;
             int endPoint = temp;
-            for(int i = temp; i<scheduleText.length()&&scheduleText.charAt(i)!=':';i++){
+            for(int i = temp; i<scheduleText.length() && scheduleText.charAt(i)!=':'; i++){
                 if(scheduleText.charAt(i)=='['){
                     startPoint=i;
                 }
                 if(scheduleText.charAt(i)==']'){
                     endPoint=i;
-                    tuesday[Integer.parseInt(scheduleText.substring(startPoint+1,endPoint))]=courseTitle + professor;
+                    tuesday[Integer.parseInt(scheduleText.substring(startPoint+1,endPoint))]= courseTitle + professor;
                 }
             }
         }
 
-        if((temp=scheduleText.indexOf("Wed"))>-1){
+        if((temp=scheduleText.indexOf("Wed")) > -1){
             temp +=2;
             int startPoint = temp;
             int endPoint = temp;
-            for(int i = temp; i<scheduleText.length()&&scheduleText.charAt(i)!=':';i++){
+            for(int i = temp; i<scheduleText.length() && scheduleText.charAt(i)!=':'; i++){
                 if(scheduleText.charAt(i)=='['){
                     startPoint=i;
                 }
                 if(scheduleText.charAt(i)==']'){
                     endPoint=i;
-                    wednesday[Integer.parseInt(scheduleText.substring(startPoint+1,endPoint))]=courseTitle + professor;
+                    wednesday[Integer.parseInt(scheduleText.substring(startPoint+1,endPoint))]= courseTitle + professor;
                 }
             }
         }
-        if((temp=scheduleText.indexOf("Thu"))>-1){
+        if((temp=scheduleText.indexOf("Thu")) > -1){
             temp +=2;
             int startPoint = temp;
             int endPoint = temp;
@@ -253,11 +253,11 @@ public class Schedule {
                 }
                 if(scheduleText.charAt(i)==']'){
                     endPoint=i;
-                    thursday[Integer.parseInt(scheduleText.substring(startPoint+1,endPoint))]=courseTitle + professor;
+                    thursday[Integer.parseInt(scheduleText.substring(startPoint+1,endPoint))]= courseTitle + professor;
                 }
             }
         }
-        if((temp=scheduleText.indexOf("Fri"))>-1){
+        if((temp=scheduleText.indexOf("Fri")) > -1){
             temp +=2;
             int startPoint = temp;
             int endPoint = temp;
@@ -267,7 +267,7 @@ public class Schedule {
                 }
                 if(scheduleText.charAt(i)==']'){
                     endPoint=i;
-                    friday[Integer.parseInt(scheduleText.substring(startPoint+1,endPoint))]=courseTitle + professor;
+                    friday[Integer.parseInt(scheduleText.substring(startPoint+1,endPoint))]= courseTitle + professor;
                 }
             }
         }
@@ -275,7 +275,7 @@ public class Schedule {
 
 
     public void setting (TextView[] monday, TextView[] tuesday, TextView[] wednesday, TextView[] thursday, TextView[] friday, Context context){
-        for(int i=0;i<14;i++){
+        for(int i=0; i<14; i++){
 
             if(!this.monday[i].equals("")){
                 monday[i].setText(this.monday[i]);

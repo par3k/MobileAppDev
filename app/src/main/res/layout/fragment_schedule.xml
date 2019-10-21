@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ScheduleFragment">
+    tools:context=".ScheduleFragment2">
 
     <TableLayout
         android:layout_width="match_parent"
@@ -105,7 +105,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
-                android:id="@+id/tuesday0"/>/>
+                android:id="@+id/tuesday0"/>
 
             <TextView
                 android:text="Wed"
@@ -116,7 +116,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
-                android:id="@+id/wednesday0"/>/>
+                android:id="@+id/wednesday0"/>
 
             <TextView
                 android:text="Thu"
@@ -178,7 +178,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
-                android:id="@+id/tuesday1"/>/>
+                android:id="@+id/tuesday1"/>
 
             <TextView
                 android:text="Wed"
@@ -189,7 +189,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
-                android:id="@+id/wednesday1"/>/>
+                android:id="@+id/wednesday1"/>
 
             <TextView
                 android:text="Thu"
@@ -251,7 +251,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
-                android:id="@+id/tuesday2"/>/>
+                android:id="@+id/tuesday2"/>
 
             <TextView
                 android:text="Wed"
@@ -262,7 +262,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
-                android:id="@+id/wednesday2"/>/>
+                android:id="@+id/wednesday2"/>
 
             <TextView
                 android:text="Thu"
@@ -324,7 +324,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
-                android:id="@+id/tuesday3"/>/>
+                android:id="@+id/tuesday3"/>
 
             <TextView
                 android:text="Wed"
@@ -335,7 +335,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
-                android:id="@+id/wednesday3"/>/>
+                android:id="@+id/wednesday3"/>
 
             <TextView
                 android:text="Thu"
@@ -397,7 +397,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
-                android:id="@+id/tuesday4"/>/>
+                android:id="@+id/tuesday4"/>
 
             <TextView
                 android:text="Wed"
@@ -408,7 +408,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
-                android:id="@+id/wednesday4"/>/>
+                android:id="@+id/wednesday4"/>
 
             <TextView
                 android:text="Thu"
@@ -470,7 +470,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
-                android:id="@+id/tuesday5"/>/>
+                android:id="@+id/tuesday5"/>
 
             <TextView
                 android:text="Wed"
@@ -481,7 +481,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
-                android:id="@+id/wednesday5"/>/>
+                android:id="@+id/wednesday5"/>
 
             <TextView
                 android:text="Thu"
@@ -544,7 +544,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
-                android:id="@+id/tuesday6"/>/>
+                android:id="@+id/tuesday6"/>
 
             <TextView
                 android:text="Wed"
@@ -555,7 +555,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
-                android:id="@+id/wednesday6"/>/>
+                android:id="@+id/wednesday6"/>
 
             <TextView
                 android:text="Thu"
@@ -617,7 +617,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
-                android:id="@+id/tuesday7"/>/>
+                android:id="@+id/tuesday7"/>
 
             <TextView
                 android:text="Wed"
@@ -628,7 +628,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
-                android:id="@+id/wednesday7"/>/>
+                android:id="@+id/wednesday7"/>
 
             <TextView
                 android:text="Thu"
@@ -701,7 +701,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
-                android:id="@+id/wednesday8"/>/>
+                android:id="@+id/wednesday8"/>
 
             <TextView
                 android:text="Thu"
@@ -763,7 +763,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
-                android:id="@+id/tuesday9"/>/>
+                android:id="@+id/tuesday9"/>
 
             <TextView
                 android:text="Wed"
@@ -774,7 +774,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
-                android:id="@+id/wednesday9"/>/>
+                android:id="@+id/wednesday9"/>
 
             <TextView
                 android:text="Thu"
@@ -836,7 +836,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
-                android:id="@+id/tuesday10"/>/>
+                android:id="@+id/tuesday10"/>
 
             <TextView
                 android:text="Wed"
@@ -847,7 +847,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
-                android:id="@+id/wednesday10"/>/>
+                android:id="@+id/wednesday10"/>
 
             <TextView
                 android:text="Thu"

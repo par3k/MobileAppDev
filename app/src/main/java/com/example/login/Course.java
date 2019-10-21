@@ -12,7 +12,6 @@ public class Course { // 코스 데이터를 불러올 수 있게 하는 것
     public int getCourseID() {
         return courseID;
     }
-
     public void setCourseID(int courseID) {
         this.courseID = courseID;
     }
@@ -20,7 +19,6 @@ public class Course { // 코스 데이터를 불러올 수 있게 하는 것
     public String getCourseUniversity() {
         return courseUniversity;
     }
-
     public void setCourseUniversity(String courseUniversity) {
         this.courseUniversity = courseUniversity;
     }
@@ -28,7 +26,6 @@ public class Course { // 코스 데이터를 불러올 수 있게 하는 것
     public String getCourseArea() {
         return courseArea;
     }
-
     public void setCourseArea(String courseArea) {
         this.courseArea = courseArea;
     }
@@ -36,7 +33,6 @@ public class Course { // 코스 데이터를 불러올 수 있게 하는 것
     public String getCourseTitle() {
         return courseTitle;
     }
-
     public void setCourseTitle(String courseTitle) {
         this.courseTitle = courseTitle;
     }
@@ -44,7 +40,6 @@ public class Course { // 코스 데이터를 불러올 수 있게 하는 것
     public int getCourseCredit() {
         return courseCredit;
     }
-
     public void setCourseCredit(int courseCredit) {
         this.courseCredit = courseCredit;
     }
@@ -52,7 +47,6 @@ public class Course { // 코스 데이터를 불러올 수 있게 하는 것
     public String getCourseProfessor() {
         return courseProfessor;
     }
-
     public void setCourseProfessor(String courseProfessor) {
         this.courseProfessor = courseProfessor;
     }
@@ -60,7 +54,6 @@ public class Course { // 코스 데이터를 불러올 수 있게 하는 것
     public String getCourseTime() {
         return courseTime;
     }
-
     public void setCourseTime(String courseTime) {
         this.courseTime = courseTime;
     }

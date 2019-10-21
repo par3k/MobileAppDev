@@ -41,7 +41,6 @@ public class CourseListAdapter extends BaseAdapter { //코스리스트의 화면
         this.context = context;
         this.courseList = courseList;
         this.parent = parent;
-
         schedule = new Schedule();
         courseIDList = new ArrayList<Integer>();
         new BackgroundTask().execute();
@@ -51,17 +50,14 @@ public class CourseListAdapter extends BaseAdapter { //코스리스트의 화면
     public int getCount() {
         return courseList.size();
     }
-
     @Override
     public Object getItem(int i) {
         return courseList.get(i);
     }
-
     @Override
     public long getItemId(int i) {
         return i;
     }
-
     @Override
     public View getView(final int i, View view, ViewGroup viewGroup) {
         View v = View.inflate(context,R.layout.course, null);
@@ -70,7 +66,6 @@ public class CourseListAdapter extends BaseAdapter { //코스리스트의 화면
         TextView courseCredit = (TextView) v.findViewById(R.id.courseCredit);
         TextView courseArea = (TextView) v.findViewById(R.id.courseArea);
         TextView courseTime = (TextView) v.findViewById(R.id.courseTime);
-
         courseTitle.setText(courseList.get(i).getCourseTitle());
         courseProfessor.setText("Professor " + courseList.get(i).getCourseProfessor());
         courseCredit.setText("<"+courseList.get(i).getCourseCredit()+">");
@@ -129,7 +124,6 @@ public class CourseListAdapter extends BaseAdapter { //코스리스트의 화면
                     queue.add(addRequest);
                 }
                 }
-
         });
         return v;
     }
@@ -141,7 +135,6 @@ public class CourseListAdapter extends BaseAdapter { //코스리스트의 화면
         protected void onPreExecute(){
             try{
                 target = "https://bakhoijae.cafe24.com/ScheduleList.php?userID=" + URLEncoder.encode(userID,"UTF-8");
-
             }catch (Exception e){
                 e.printStackTrace();
             }
@@ -173,7 +166,6 @@ public class CourseListAdapter extends BaseAdapter { //코스리스트의 화면
         public void onProgressUpdate(Void...values){
             super.onProgressUpdate();
         }
-
         @Override
         public void onPostExecute(String result){
             try{
