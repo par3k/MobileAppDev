@@ -14,13 +14,15 @@
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/colorPrimaryDark">
+            android:background="@color/colorPrimary">
 
             <TextView
                 android:text=""
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"/>
+                android:drawableStart="@drawable/ic_assignment_black_24dp"
+                android:drawableLeft="@drawable/ic_assignment_black_24dp"
+                android:layout_gravity="center"/>
 
             <TextView
                 android:text="Mon"
@@ -29,7 +31,9 @@
                 android:layout_weight="3"
                 android:gravity="center"
                 android:textColor="#ffffff"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:textAlignment="center"/>
 
             <TextView
                 android:text="Tue"
@@ -38,7 +42,9 @@
                 android:layout_weight="3"
                 android:gravity="center"
                 android:textColor="#ffffff"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:textAlignment="center"/>
 
             <TextView
                 android:text="Wed"
@@ -47,7 +53,9 @@
                 android:layout_weight="3"
                 android:gravity="center"
                 android:textColor="#ffffff"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:textAlignment="center"/>
 
             <TextView
                 android:text="Thu"
@@ -56,7 +64,9 @@
                 android:layout_weight="3"
                 android:gravity="center"
                 android:textColor="#ffffff"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:textAlignment="center"/>
 
             <TextView
                 android:text="Fri"
@@ -65,7 +75,9 @@
                 android:layout_weight="3"
                 android:gravity="center"
                 android:textColor="#ffffff"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:textAlignment="center"/>
 
         </TableRow>
 
@@ -73,17 +85,18 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@color/colorPrimaryDark">
+            android:background="@color/colorPrimary">
 
             <TextView
                 android:text="8"
-                android:layout_width="wrap_content"
+                android:layout_width="24dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@color/colorPrimaryDark"
+                android:background="@color/colorPrimary"
                 android:textColor="#ffffff"
                 android:textStyle="bold"
-                android:gravity="right"/>
+                android:gravity="right"
+                android:paddingRight="1dp"
+                android:textSize="15dp"/>
 
             <com.example.login.AutoResizeTextView
                 android:text="Mon"
@@ -94,6 +107,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/monday0"/>
 
             <com.example.login.AutoResizeTextView
@@ -105,6 +119,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/tuesday0"/>
 
             <com.example.login.AutoResizeTextView
@@ -116,6 +131,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/wednesday0"/>
 
             <com.example.login.AutoResizeTextView
@@ -127,6 +143,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/thursday0"/>
 
             <com.example.login.AutoResizeTextView
@@ -138,6 +155,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/friday0"/>
 
         </TableRow>
@@ -146,17 +164,18 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@color/colorPrimaryDark">
+            android:background="@color/colorPrimary">
 
             <TextView
                 android:text="9"
-                android:layout_width="wrap_content"
+                android:layout_width="24dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@color/colorPrimaryDark"
+                android:background="@color/colorPrimary"
                 android:textColor="#ffffff"
                 android:textStyle="bold"
-                android:gravity="right"/>
+                android:gravity="right"
+                android:paddingRight="1dp"
+                android:textSize="15dp"/>
 
             <com.example.login.AutoResizeTextView
                 android:text="Mon"
@@ -167,6 +186,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/monday1"/>
 
             <com.example.login.AutoResizeTextView
@@ -178,6 +198,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/tuesday1"/>
 
             <com.example.login.AutoResizeTextView
@@ -189,6 +210,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/wednesday1"/>
 
             <com.example.login.AutoResizeTextView
@@ -200,6 +222,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/thursday1"/>
 
             <com.example.login.AutoResizeTextView
@@ -211,6 +234,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/friday1"/>
 
         </TableRow>
@@ -219,17 +243,18 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@color/colorPrimaryDark">
+            android:background="@color/colorPrimary">
 
             <TextView
                 android:text="10"
-                android:layout_width="wrap_content"
+                android:layout_width="24dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@color/colorPrimaryDark"
+                android:background="@color/colorPrimary"
                 android:textColor="#ffffff"
                 android:textStyle="bold"
-                android:gravity="right"/>
+                android:gravity="right"
+                android:paddingRight="1dp"
+                android:textSize="15dp"/>
 
             <com.example.login.AutoResizeTextView
                 android:text="Mon"
@@ -240,6 +265,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/monday2"/>
 
             <com.example.login.AutoResizeTextView
@@ -251,6 +277,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/tuesday2"/>
 
             <com.example.login.AutoResizeTextView
@@ -262,6 +289,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/wednesday2"/>
 
             <com.example.login.AutoResizeTextView
@@ -273,6 +301,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/thursday2"/>
 
             <com.example.login.AutoResizeTextView
@@ -284,6 +313,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/friday2"/>
 
         </TableRow>
@@ -292,17 +322,18 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@color/colorPrimaryDark">
+            android:background="@color/colorPrimary">
 
             <TextView
                 android:text="11"
-                android:layout_width="wrap_content"
+                android:layout_width="24dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@color/colorPrimaryDark"
+                android:background="@color/colorPrimary"
                 android:textColor="#ffffff"
                 android:textStyle="bold"
-                android:gravity="right"/>
+                android:gravity="right"
+                android:paddingRight="1dp"
+                android:textSize="15dp"/>
 
             <com.example.login.AutoResizeTextView
                 android:text="Mon"
@@ -313,6 +344,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/monday3"/>
 
             <com.example.login.AutoResizeTextView
@@ -324,6 +356,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/tuesday3"/>
 
             <com.example.login.AutoResizeTextView
@@ -335,6 +368,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/wednesday3"/>
 
             <com.example.login.AutoResizeTextView
@@ -346,6 +380,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/thursday3"/>
 
             <com.example.login.AutoResizeTextView
@@ -357,6 +392,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/friday3"/>
 
         </TableRow>
@@ -365,17 +401,18 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@color/colorPrimaryDark">
+            android:background="@color/colorPrimary">
 
             <TextView
                 android:text="12"
-                android:layout_width="wrap_content"
+                android:layout_width="24dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@color/colorPrimaryDark"
+                android:background="@color/colorPrimary"
                 android:textColor="#ffffff"
                 android:textStyle="bold"
-                android:gravity="right"/>
+                android:gravity="right"
+                android:paddingRight="1dp"
+                android:textSize="15dp"/>
 
             <com.example.login.AutoResizeTextView
                 android:text="Mon"
@@ -386,6 +423,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/monday4"/>
 
             <com.example.login.AutoResizeTextView
@@ -397,6 +435,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/tuesday4"/>
 
             <com.example.login.AutoResizeTextView
@@ -408,6 +447,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/wednesday4"/>
 
             <com.example.login.AutoResizeTextView
@@ -419,6 +459,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/thursday4"/>
 
             <com.example.login.AutoResizeTextView
@@ -430,6 +471,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/friday4"/>
 
         </TableRow>
@@ -438,17 +480,18 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@color/colorPrimaryDark">
+            android:background="@color/colorPrimary">
 
             <TextView
                 android:text="13"
-                android:layout_width="wrap_content"
+                android:layout_width="24dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@color/colorPrimaryDark"
+                android:background="@color/colorPrimary"
                 android:textColor="#ffffff"
                 android:textStyle="bold"
-                android:gravity="right"/>
+                android:gravity="right"
+                android:paddingRight="1dp"
+                android:textSize="15dp"/>
 
             <com.example.login.AutoResizeTextView
                 android:text="Mon"
@@ -459,6 +502,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/monday5"/>
 
             <com.example.login.AutoResizeTextView
@@ -470,6 +514,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/tuesday5"/>
 
             <com.example.login.AutoResizeTextView
@@ -481,6 +526,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/wednesday5"/>
 
             <com.example.login.AutoResizeTextView
@@ -492,6 +538,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/thursday5"/>
 
             <com.example.login.AutoResizeTextView
@@ -503,6 +550,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/friday5"/>
 
         </TableRow>
@@ -512,17 +560,18 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@color/colorPrimaryDark">
+            android:background="@color/colorPrimary">
 
             <TextView
                 android:text="14"
-                android:layout_width="wrap_content"
+                android:layout_width="24dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@color/colorPrimaryDark"
+                android:background="@color/colorPrimary"
                 android:textColor="#ffffff"
                 android:textStyle="bold"
-                android:gravity="right"/>
+                android:gravity="right"
+                android:paddingRight="1dp"
+                android:textSize="15dp"/>
 
             <com.example.login.AutoResizeTextView
                 android:text="Mon"
@@ -533,6 +582,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/monday6"/>
 
             <com.example.login.AutoResizeTextView
@@ -544,6 +594,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/tuesday6"/>
 
             <com.example.login.AutoResizeTextView
@@ -555,6 +606,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/wednesday6"/>
 
             <com.example.login.AutoResizeTextView
@@ -566,6 +618,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/thursday6"/>
 
             <com.example.login.AutoResizeTextView
@@ -577,6 +630,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/friday6"/>
 
         </TableRow>
@@ -585,17 +639,18 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@color/colorPrimaryDark">
+            android:background="@color/colorPrimary">
 
             <TextView
                 android:text="15"
-                android:layout_width="wrap_content"
+                android:layout_width="24dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@color/colorPrimaryDark"
+                android:background="@color/colorPrimary"
                 android:textColor="#ffffff"
                 android:textStyle="bold"
-                android:gravity="right"/>
+                android:gravity="right"
+                android:paddingRight="1dp"
+                android:textSize="15dp"/>
 
             <com.example.login.AutoResizeTextView
                 android:text="Mon"
@@ -606,6 +661,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/monday7"/>
 
             <com.example.login.AutoResizeTextView
@@ -617,6 +673,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/tuesday7"/>
 
             <com.example.login.AutoResizeTextView
@@ -628,6 +685,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/wednesday7"/>
 
             <com.example.login.AutoResizeTextView
@@ -639,6 +697,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/thursday7"/>
 
             <com.example.login.AutoResizeTextView
@@ -650,6 +709,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/friday7"/>
 
         </TableRow>
@@ -658,17 +718,18 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@color/colorPrimaryDark">
+            android:background="@color/colorPrimary">
 
             <TextView
                 android:text="16"
-                android:layout_width="wrap_content"
+                android:layout_width="24dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@color/colorPrimaryDark"
+                android:background="@color/colorPrimary"
                 android:textColor="#ffffff"
                 android:textStyle="bold"
-                android:gravity="right"/>
+                android:gravity="right"
+                android:paddingRight="1dp"
+                android:textSize="15dp"/>
 
             <com.example.login.AutoResizeTextView
                 android:text="Mon"
@@ -679,6 +740,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/monday8"/>
 
             <com.example.login.AutoResizeTextView
@@ -690,6 +752,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/tuesday8"/>
 
             <com.example.login.AutoResizeTextView
@@ -701,6 +764,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/wednesday8"/>
 
             <com.example.login.AutoResizeTextView
@@ -712,6 +776,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/thursday8"/>
 
             <com.example.login.AutoResizeTextView
@@ -723,6 +788,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/friday8"/>
 
         </TableRow>
@@ -731,17 +797,18 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@color/colorPrimaryDark">
+            android:background="@color/colorPrimary">
 
             <TextView
                 android:text="17"
-                android:layout_width="wrap_content"
+                android:layout_width="24dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@color/colorPrimaryDark"
+                android:background="@color/colorPrimary"
                 android:textColor="#ffffff"
                 android:textStyle="bold"
-                android:gravity="right"/>
+                android:gravity="right"
+                android:paddingRight="1dp"
+                android:textSize="15dp"/>
 
             <com.example.login.AutoResizeTextView
                 android:text="Mon"
@@ -752,6 +819,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/monday9"/>
 
             <com.example.login.AutoResizeTextView
@@ -763,6 +831,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/tuesday9"/>
 
             <com.example.login.AutoResizeTextView
@@ -774,6 +843,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/wednesday9"/>
 
             <com.example.login.AutoResizeTextView
@@ -785,6 +855,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/thursday9"/>
 
             <com.example.login.AutoResizeTextView
@@ -796,6 +867,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/friday9"/>
 
         </TableRow>
@@ -804,17 +876,18 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@color/colorPrimaryDark">
+            android:background="@color/colorPrimary">
 
             <TextView
                 android:text="18"
-                android:layout_width="wrap_content"
+                android:layout_width="24dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@color/colorPrimaryDark"
+                android:background="@color/colorPrimary"
                 android:textColor="#ffffff"
                 android:textStyle="bold"
-                android:gravity="right"/>
+                android:gravity="right"
+                android:paddingRight="1dp"
+                android:textSize="15dp"/>
 
             <com.example.login.AutoResizeTextView
                 android:text="Mon"
@@ -825,6 +898,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/monday10"/>
 
             <com.example.login.AutoResizeTextView
@@ -836,6 +910,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/tuesday10"/>
 
             <com.example.login.AutoResizeTextView
@@ -847,6 +922,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/wednesday10"/>
 
             <com.example.login.AutoResizeTextView
@@ -858,6 +934,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/thursday10"/>
 
             <com.example.login.AutoResizeTextView
@@ -869,6 +946,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/friday10"/>
 
         </TableRow>
@@ -877,17 +955,18 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@color/colorPrimaryDark">
+            android:background="@color/colorPrimary">
 
             <TextView
                 android:text="19"
-                android:layout_width="wrap_content"
+                android:layout_width="24dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@color/colorPrimaryDark"
+                android:background="@color/colorPrimary"
                 android:textColor="#ffffff"
                 android:textStyle="bold"
-                android:gravity="right"/>
+                android:gravity="right"
+                android:paddingRight="1dp"
+                android:textSize="15dp"/>
 
             <com.example.login.AutoResizeTextView
                 android:text="Mon"
@@ -898,6 +977,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/monday11"/>
 
             <com.example.login.AutoResizeTextView
@@ -909,6 +989,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/tuesday11"/>
 
             <com.example.login.AutoResizeTextView
@@ -920,6 +1001,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/wednesday11"/>
 
             <com.example.login.AutoResizeTextView
@@ -931,6 +1013,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/thursday11"/>
 
             <com.example.login.AutoResizeTextView
@@ -941,6 +1024,7 @@
                 android:gravity="center"
                 android:textColor="#ffffff"
                 android:textStyle="bold"
+                android:padding="2dp"
                 android:background="@drawable/cell_shape"
                 android:id="@+id/friday11"/>
 
@@ -950,17 +1034,18 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@color/colorPrimaryDark">
+            android:background="@color/colorPrimary">
 
             <TextView
                 android:text="20"
-                android:layout_width="wrap_content"
+                android:layout_width="24dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@color/colorPrimaryDark"
+                android:background="@color/colorPrimary"
                 android:textColor="#ffffff"
                 android:textStyle="bold"
-                android:gravity="right"/>
+                android:gravity="right"
+                android:paddingRight="1dp"
+                android:textSize="15dp"/>
 
             <com.example.login.AutoResizeTextView
                 android:text="Mon"
@@ -971,6 +1056,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/monday12"/>
 
             <com.example.login.AutoResizeTextView
@@ -982,6 +1068,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/tuesday12"/>
 
             <com.example.login.AutoResizeTextView
@@ -993,6 +1080,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/wednesday12"/>
 
             <com.example.login.AutoResizeTextView
@@ -1004,6 +1092,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/thursday12"/>
 
             <com.example.login.AutoResizeTextView
@@ -1015,6 +1104,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/friday12"/>
 
         </TableRow>
@@ -1023,17 +1113,18 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@color/colorPrimaryDark">
+            android:background="@color/colorPrimary">
 
             <TextView
                 android:text="21"
-                android:layout_width="wrap_content"
+                android:layout_width="24dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@color/colorPrimaryDark"
+                android:background="@color/colorPrimary"
                 android:textColor="#ffffff"
                 android:textStyle="bold"
-                android:gravity="right"/>
+                android:gravity="right"
+                android:paddingRight="1dp"
+                android:textSize="15dp"/>
 
             <com.example.login.AutoResizeTextView
                 android:text="Mon"
@@ -1044,6 +1135,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/monday13"/>
 
             <com.example.login.AutoResizeTextView
@@ -1055,6 +1147,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/tuesday13"/>
 
             <com.example.login.AutoResizeTextView
@@ -1066,6 +1159,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/wednesday13"/>
 
             <com.example.login.AutoResizeTextView
@@ -1077,6 +1171,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/thursday13"/>
 
             <com.example.login.AutoResizeTextView
@@ -1088,6 +1183,7 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
+                android:padding="2dp"
                 android:id="@+id/friday13"/>
 
         </TableRow>

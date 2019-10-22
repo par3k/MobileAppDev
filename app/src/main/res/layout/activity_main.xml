@@ -23,8 +23,8 @@
             android:textColor="#FFFFFF"
             android:textSize="18dp"
             android:background="@color/colorPrimary"
-            android:layout_marginLeft="4dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
             />
 
         <Button
@@ -37,8 +37,8 @@
             android:textColor="#FFFFFF"
             android:textSize="18dp"
             android:background="@color/colorPrimary"
-            android:layout_margin="8dp"
-            android:layout_marginTop="8dp"
+            android:layout_margin="5dp"
+            android:layout_marginTop="5dp"
             />
 
     </LinearLayout>
@@ -58,7 +58,7 @@
                 android:layout_height="200dp"
                 android:orientation="vertical"
                 android:background="@color/colorPrimary"
-                android:layout_marginTop="8dp">
+                android:layout_marginTop="5dp">
 
 
             <ImageButton
