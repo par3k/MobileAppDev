@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ScheduleFragment2">
+    tools:context=".ScheduleFragment">
 
     <TableLayout
         android:layout_width="match_parent"
@@ -85,7 +85,7 @@
                 android:textStyle="bold"
                 android:gravity="right"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Mon"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -96,7 +96,7 @@
                 android:background="@drawable/cell_shape"
                 android:id="@+id/monday0"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Tue"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -107,7 +107,7 @@
                 android:background="@drawable/cell_shape"
                 android:id="@+id/tuesday0"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Wed"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -118,7 +118,7 @@
                 android:background="@drawable/cell_shape"
                 android:id="@+id/wednesday0"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Thu"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -129,7 +129,7 @@
                 android:background="@drawable/cell_shape"
                 android:id="@+id/thursday0"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Fri"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -158,7 +158,7 @@
                 android:textStyle="bold"
                 android:gravity="right"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Mon"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -169,7 +169,7 @@
                 android:background="@drawable/cell_shape"
                 android:id="@+id/monday1"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Tue"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -180,7 +180,7 @@
                 android:background="@drawable/cell_shape"
                 android:id="@+id/tuesday1"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Wed"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -191,7 +191,7 @@
                 android:background="@drawable/cell_shape"
                 android:id="@+id/wednesday1"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Thu"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -202,7 +202,7 @@
                 android:background="@drawable/cell_shape"
                 android:id="@+id/thursday1"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Fri"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -231,7 +231,7 @@
                 android:textStyle="bold"
                 android:gravity="right"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Mon"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -242,7 +242,7 @@
                 android:background="@drawable/cell_shape"
                 android:id="@+id/monday2"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Tue"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -253,7 +253,7 @@
                 android:background="@drawable/cell_shape"
                 android:id="@+id/tuesday2"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Wed"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -264,7 +264,7 @@
                 android:background="@drawable/cell_shape"
                 android:id="@+id/wednesday2"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Thu"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -275,7 +275,7 @@
                 android:background="@drawable/cell_shape"
                 android:id="@+id/thursday2"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Fri"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -304,7 +304,7 @@
                 android:textStyle="bold"
                 android:gravity="right"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Mon"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -315,7 +315,7 @@
                 android:background="@drawable/cell_shape"
                 android:id="@+id/monday3"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Tue"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -326,7 +326,7 @@
                 android:background="@drawable/cell_shape"
                 android:id="@+id/tuesday3"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Wed"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -337,7 +337,7 @@
                 android:background="@drawable/cell_shape"
                 android:id="@+id/wednesday3"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Thu"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -348,7 +348,7 @@
                 android:background="@drawable/cell_shape"
                 android:id="@+id/thursday3"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Fri"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -377,7 +377,7 @@
                 android:textStyle="bold"
                 android:gravity="right"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Mon"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -388,7 +388,7 @@
                 android:background="@drawable/cell_shape"
                 android:id="@+id/monday4"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Tue"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -399,7 +399,7 @@
                 android:background="@drawable/cell_shape"
                 android:id="@+id/tuesday4"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Wed"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -410,7 +410,7 @@
                 android:background="@drawable/cell_shape"
                 android:id="@+id/wednesday4"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Thu"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -421,7 +421,7 @@
                 android:background="@drawable/cell_shape"
                 android:id="@+id/thursday4"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Fri"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -450,7 +450,7 @@
                 android:textStyle="bold"
                 android:gravity="right"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Mon"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -461,7 +461,7 @@
                 android:background="@drawable/cell_shape"
                 android:id="@+id/monday5"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Tue"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -472,7 +472,7 @@
                 android:background="@drawable/cell_shape"
                 android:id="@+id/tuesday5"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Wed"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -483,7 +483,7 @@
                 android:background="@drawable/cell_shape"
                 android:id="@+id/wednesday5"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Thu"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -494,7 +494,7 @@
                 android:background="@drawable/cell_shape"
                 android:id="@+id/thursday5"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Fri"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -524,7 +524,7 @@
                 android:textStyle="bold"
                 android:gravity="right"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Mon"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -535,7 +535,7 @@
                 android:background="@drawable/cell_shape"
                 android:id="@+id/monday6"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Tue"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -546,7 +546,7 @@
                 android:background="@drawable/cell_shape"
                 android:id="@+id/tuesday6"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Wed"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -557,7 +557,7 @@
                 android:background="@drawable/cell_shape"
                 android:id="@+id/wednesday6"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Thu"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -568,7 +568,7 @@
                 android:background="@drawable/cell_shape"
                 android:id="@+id/thursday6"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Fri"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -597,7 +597,7 @@
                 android:textStyle="bold"
                 android:gravity="right"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Mon"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -608,7 +608,7 @@
                 android:background="@drawable/cell_shape"
                 android:id="@+id/monday7"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Tue"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -619,7 +619,7 @@
                 android:background="@drawable/cell_shape"
                 android:id="@+id/tuesday7"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Wed"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -630,7 +630,7 @@
                 android:background="@drawable/cell_shape"
                 android:id="@+id/wednesday7"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Thu"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -641,7 +641,7 @@
                 android:background="@drawable/cell_shape"
                 android:id="@+id/thursday7"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Fri"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -670,7 +670,7 @@
                 android:textStyle="bold"
                 android:gravity="right"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Mon"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -681,7 +681,7 @@
                 android:background="@drawable/cell_shape"
                 android:id="@+id/monday8"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Tue"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -690,9 +690,9 @@
                 android:textColor="#ffffff"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
-                android:id="@+id/tuesday8"/>/>
+                android:id="@+id/tuesday8"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Wed"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -703,7 +703,7 @@
                 android:background="@drawable/cell_shape"
                 android:id="@+id/wednesday8"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Thu"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -714,7 +714,7 @@
                 android:background="@drawable/cell_shape"
                 android:id="@+id/thursday8"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Fri"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -743,7 +743,7 @@
                 android:textStyle="bold"
                 android:gravity="right"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Mon"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -754,7 +754,7 @@
                 android:background="@drawable/cell_shape"
                 android:id="@+id/monday9"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Tue"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -765,7 +765,7 @@
                 android:background="@drawable/cell_shape"
                 android:id="@+id/tuesday9"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Wed"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -776,7 +776,7 @@
                 android:background="@drawable/cell_shape"
                 android:id="@+id/wednesday9"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Thu"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -787,7 +787,7 @@
                 android:background="@drawable/cell_shape"
                 android:id="@+id/thursday9"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Fri"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -816,7 +816,7 @@
                 android:textStyle="bold"
                 android:gravity="right"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Mon"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -827,7 +827,7 @@
                 android:background="@drawable/cell_shape"
                 android:id="@+id/monday10"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Tue"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -838,7 +838,7 @@
                 android:background="@drawable/cell_shape"
                 android:id="@+id/tuesday10"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Wed"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -849,7 +849,7 @@
                 android:background="@drawable/cell_shape"
                 android:id="@+id/wednesday10"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Thu"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -860,7 +860,7 @@
                 android:background="@drawable/cell_shape"
                 android:id="@+id/thursday10"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Fri"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -889,7 +889,7 @@
                 android:textStyle="bold"
                 android:gravity="right"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Mon"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -900,7 +900,7 @@
                 android:background="@drawable/cell_shape"
                 android:id="@+id/monday11"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Tue"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -911,7 +911,7 @@
                 android:background="@drawable/cell_shape"
                 android:id="@+id/tuesday11"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Wed"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -922,7 +922,7 @@
                 android:background="@drawable/cell_shape"
                 android:id="@+id/wednesday11"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Thu"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -933,7 +933,7 @@
                 android:background="@drawable/cell_shape"
                 android:id="@+id/thursday11"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Fri"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -962,7 +962,7 @@
                 android:textStyle="bold"
                 android:gravity="right"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Mon"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -973,7 +973,7 @@
                 android:background="@drawable/cell_shape"
                 android:id="@+id/monday12"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Tue"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -984,7 +984,7 @@
                 android:background="@drawable/cell_shape"
                 android:id="@+id/tuesday12"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Wed"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -995,7 +995,7 @@
                 android:background="@drawable/cell_shape"
                 android:id="@+id/wednesday12"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Thu"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -1006,7 +1006,7 @@
                 android:background="@drawable/cell_shape"
                 android:id="@+id/thursday12"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Fri"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -1035,7 +1035,7 @@
                 android:textStyle="bold"
                 android:gravity="right"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Mon"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -1046,7 +1046,7 @@
                 android:background="@drawable/cell_shape"
                 android:id="@+id/monday13"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Tue"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -1057,7 +1057,7 @@
                 android:background="@drawable/cell_shape"
                 android:id="@+id/tuesday13"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Wed"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -1068,7 +1068,7 @@
                 android:background="@drawable/cell_shape"
                 android:id="@+id/wednesday13"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Thu"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -1079,7 +1079,7 @@
                 android:background="@drawable/cell_shape"
                 android:id="@+id/thursday13"/>
 
-            <TextView
+            <com.example.login.AutoResizeTextView
                 android:text="Fri"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
