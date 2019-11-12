@@ -3,6 +3,8 @@ package com.example.login;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.pm.ActivityInfo;
 import android.os.AsyncTask;
@@ -31,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
     private List<Notice> noticeList;
     public static String userID;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,16 +46,33 @@ public class MainActivity extends AppCompatActivity {
         adapter = new NoticeListAdapter(getApplicationContext(),noticeList);
         noticeListView.setAdapter(adapter);
 
+
+        final Button classButton = (Button) findViewById(R.id.classButton);
         final Button courseButton = (Button) findViewById(R.id.courseButton);
         final Button scheduleButton = (Button) findViewById(R.id.scheduleButton);
+
         final LinearLayout notice = (LinearLayout) findViewById(R.id.notice);
         final Button addButton = (Button) findViewById(R.id.addButton);
 
+        classButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                notice.setVisibility(View.GONE);
+                classButton.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));
+                courseButton.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+                scheduleButton.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+                FragmentManager fragmentManager = getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.fragment, new ClassFragment());
+                fragmentTransaction.commit();
+            }
+        });
 
         courseButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 notice.setVisibility(View.GONE);
+                classButton.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
                 courseButton.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));
                 scheduleButton.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
                 FragmentManager fragmentManager = getSupportFragmentManager();
@@ -67,6 +87,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 notice.setVisibility(View.GONE);
+                classButton.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
                 courseButton.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
                 scheduleButton.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));
                 FragmentManager fragmentManager = getSupportFragmentManager();
