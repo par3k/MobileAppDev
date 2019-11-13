@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -42,6 +43,7 @@ public class ClassListAdapter extends RecyclerView.Adapter<ClassListAdapter.View
     @Override
     public void onBindViewHolder(@NonNull ClassListAdapter.ViewHolder myViewHolder,final int i) {
         myViewHolder.classnameText.setText(mClassList.get(i).getClassname());
+        myViewHolder.img.setImageResource(mClassList.get(i).getPhoto());
     }
 
     @Override
@@ -53,10 +55,12 @@ public class ClassListAdapter extends RecyclerView.Adapter<ClassListAdapter.View
     public class ViewHolder extends RecyclerView.ViewHolder{
         TextView classnameText;
         Button detailButton;
+        ImageView img;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             classnameText = (TextView) itemView.findViewById(R.id.title_text);
-            detailButton = (Button) itemView.findViewById(R.id.viewdetail_button);
+            detailButton = (Button) itemView.findViewById(R.id.detailButton);
+            img = (ImageView) itemView.findViewById(R.id.class_img);
         }
     }
 }

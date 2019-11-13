@@ -24,10 +24,11 @@
             android:layout_height="150dp">
 
             <ImageView
+                android:id="@+id/class_img"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
-                android:src="@mipmap/ic_launcher"/>
+                android:src="@mipmap/ic_launcher" />
 
             <TextView
                 android:id="@+id/title_text"
@@ -36,7 +37,7 @@
                 android:layout_alignParentBottom="true"
                 android:padding="16dp"
                 tools:text="Title"
-                android:textColor="#ffffff"
+                android:textColor="@color/colorPrimary"
                 android:textSize="24sp"
                 android:textStyle="bold"/>
 
@@ -47,7 +48,7 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/viewdetail_button"
+                android:id="@+id/detailButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#00ffffff"
