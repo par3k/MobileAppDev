@@ -4,6 +4,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -12,45 +13,60 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
-public class ClassListAdapter extends RecyclerView.Adapter<ClassListAdapter.MyViewHolder> {
+public class ClassListAdapter extends RecyclerView.Adapter<ClassListAdapter.ViewHolder> {
 
-    private List<Class> classList;
+    private final List<Class> mClassList;
+
+    public interface MyRecyclerViewClickListener{
+        void onItemClicked(int i);
+        void onViewDetailButtonClicked(int i);
+    }
+
+    private MyRecyclerViewClickListener mListener;
+    public void setOnClickListener(MyRecyclerViewClickListener listener){
+        mListener = listener;
+    }
 
     public ClassListAdapter(List<Class> classList){
-        this.classList = classList;
+        this.mClassList = classList;
     }
 
     @NonNull
     @Override
-    public ClassListAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-
-        View itemView = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.class_list, viewGroup, false);
-        return new MyViewHolder(itemView);
+    public ClassListAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
+        View view = LayoutInflater.from(viewGroup.getContext())
+                .inflate(R.layout.class_list, viewGroup, false);
+        return new ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ClassListAdapter.MyViewHolder myViewHolder, int i) {
+    public void onBindViewHolder(@NonNull ClassListAdapter.ViewHolder myViewHolder,final int i) {
+        myViewHolder.classnameText.setText(mClassList.get(i).getClassname());
 
-        myViewHolder.classnameText.setText(classList.get(i).getClassname());
-
+        if(mListener != null){
+            final int pos = i;
+            myViewHolder.itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    mListener.onViewDetailButtonClicked(pos);
+                }
+            });
+        }
     }
 
     @Override
     public int getItemCount() {
-        return classList.size();
+        return mClassList.size();
     }
 
 
-    public class MyViewHolder extends RecyclerView.ViewHolder{
-
-
-        public final TextView classnameText;
-
-        public MyViewHolder(@NonNull View itemView) {
+    public class ViewHolder extends RecyclerView.ViewHolder{
+        TextView classnameText;
+        Button more;
+        public ViewHolder(@NonNull View itemView) {
             super(itemView);
-
             classnameText = itemView.findViewById(R.id.title_text);
-
+            more = itemView.findViewById(R.id.viewdetail_button);
         }
     }
 }

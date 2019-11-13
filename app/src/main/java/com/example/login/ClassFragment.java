@@ -43,10 +43,12 @@ public class ClassFragment extends Fragment {
         return v;
     }
 
+
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         prepareDate();
+
     }
 
     private void prepareDate(){
