@@ -27,7 +27,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
-                android:src="@drawable/default-image.png"/>
+                android:src="@mipmap/ic_launcher"/>
 
             <TextView
                 android:id="@+id/title_text"
