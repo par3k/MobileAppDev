@@ -50,17 +50,17 @@ public class ClassFragment extends Fragment {
     }
 
     private void prepareDate(){
-        classList.add(new Class("JAVA","Ma Difang"));
-        classList.add(new Class("C","Ma Difang"));
-        classList.add(new Class("Discrete Math","Liu Duo"));
-        classList.add(new Class("OS","Kong lingbo"));
-        classList.add(new Class("Android","Zeng Ligang"));
-        classList.add(new Class("NoSQL","Li Yu"));
-        classList.add(new Class("UI","Wang Xi"));
-        classList.add(new Class("C++","Yuan Haitao"));
-        classList.add(new Class("A.I","Wang Fangshi"));
-        classList.add(new Class("Algorithm","Wang Xi"));
-        classList.add(new Class("Data Structure","Wei Xaotao"));
+        classList.add(new Class("JAVA"));
+        classList.add(new Class("C"));
+        classList.add(new Class("Discrete Math"));
+        classList.add(new Class("OS"));
+        classList.add(new Class("Android"));
+        classList.add(new Class("NoSQL"));
+        classList.add(new Class("UI"));
+        classList.add(new Class("C++"));
+        classList.add(new Class("A.I"));
+        classList.add(new Class("Algorithm"));
+        classList.add(new Class("Data Structure"));
     }
 
 

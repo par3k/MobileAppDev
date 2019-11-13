@@ -32,7 +32,6 @@ public class ClassListAdapter extends RecyclerView.Adapter<ClassListAdapter.MyVi
     public void onBindViewHolder(@NonNull ClassListAdapter.MyViewHolder myViewHolder, int i) {
 
         myViewHolder.classnameText.setText(classList.get(i).getClassname());
-        myViewHolder.teacherText.setText(String.valueOf(classList.get(i).getTeacher()));
 
     }
 
@@ -45,13 +44,12 @@ public class ClassListAdapter extends RecyclerView.Adapter<ClassListAdapter.MyVi
     public class MyViewHolder extends RecyclerView.ViewHolder{
 
 
-        public final TextView classnameText, teacherText;
+        public final TextView classnameText;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            classnameText = itemView.findViewById(R.id.text_cname);
-            teacherText = itemView.findViewById(R.id.text_teacher);
+            classnameText = itemView.findViewById(R.id.title_text);
 
         }
     }
