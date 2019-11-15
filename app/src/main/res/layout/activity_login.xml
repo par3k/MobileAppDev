@@ -50,7 +50,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:background="#d4e5ff">
 
             <EditText
             android:layout_width="280dp"
@@ -87,7 +88,7 @@
                 android:textSize="20dp"
                 android:textStyle="bold"
                 android:textColor="#ffffff"
-                android:background="@color/colorPrimary"
+                android:background="@color/colorPrimaryDark"
                 android:text="Sign In"
                 android:layout_marginTop="20dp"
                 android:layout_gravity="center"
