@@ -82,6 +82,15 @@ public class LoginActivity extends AppCompatActivity { //로그인 기능
                 queue.add(loginRequest);
             }
         });
+
+        TextView information = (TextView) findViewById(R.id.information);
+        information.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(LoginActivity.this, Pop.class));
+            }
+        });
+
     }
 
     @Override
