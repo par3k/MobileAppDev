@@ -77,7 +77,7 @@
         <TextView
             android:drawableStart="@drawable/ic_assignment_black_24dp"
             android:drawableLeft="@drawable/ic_assignment_black_24dp"
-            android:text=" Project Teammates"
+            android:text=" Project Developers"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="#ffff"
