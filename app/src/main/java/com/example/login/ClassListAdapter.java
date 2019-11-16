@@ -64,3 +64,4 @@ public class ClassListAdapter extends RecyclerView.Adapter<ClassListAdapter.View
         }
     }
 }
+

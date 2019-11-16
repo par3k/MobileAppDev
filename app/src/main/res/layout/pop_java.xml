@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:text="Java Programming [2]"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#ffff"
+        android:padding="5dp"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/profile_cho"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:drawableStart="@drawable/ic_person_blue_24dp"
+        android:drawableLeft="@drawable/ic_person_blue_24dp"
+        android:text=" Professor : Dr. Cho Seungyeon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="2dp"
+        android:textColor="#ffff"
+        android:background="@color/colorPrimary"
+        android:padding="5dp"
+        android:textSize="15dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:drawableStart="@drawable/ic_query_builder_black_24dp"
+        android:drawableLeft="@drawable/ic_query_builder_black_24dp"
+        android:text=" Class Time : Monday [6][7]"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="1dp"
+        android:textColor="#ffff"
+        android:background="@color/colorPrimary"
+        android:padding="5dp"
+        android:textSize="15dp"
+        android:textStyle="bold"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:drawableStart="@drawable/ic_turned_in_black_24dp"
+            android:drawableLeft="@drawable/ic_turned_in_black_24dp"
+            android:text=" Description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:background="#ffff"
+            android:padding="5dp"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:isScrollContainer="true"
+            android:background="#ffff">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ssrf;rasas dasdasdasdsadasdasdasd asaasfasfasfasfasfa sfafasfasfasfasfasfasfasfasslfjrs;lfkjsr;lkfjrs;klfjs;rljf;lskrjf" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>
