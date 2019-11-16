@@ -1,6 +1,8 @@
 package com.example.login;
 
+import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -34,7 +36,57 @@ public class ClassListAdapter extends RecyclerView.Adapter<ClassListAdapter.View
         vHolder.detailButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(mContext,"Test Click"+String.valueOf(vHolder.getAdapterPosition()),Toast.LENGTH_SHORT).show();
+                if(String.valueOf(vHolder.getAdapterPosition())!=null) {
+                    if(vHolder.getAdapterPosition()==0) {
+                        Intent intent2 = new Intent(view.getContext(), Pop_java.class);
+                        intent2.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        view.getContext().startActivity(intent2);
+                    } else if(vHolder.getAdapterPosition()==1){
+                        Intent intent2 = new Intent(view.getContext(), Pop_c.class);
+                        intent2.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        view.getContext().startActivity(intent2);
+                    } else if(vHolder.getAdapterPosition()==2){
+                        Intent intent2 = new Intent(view.getContext(), Pop_discrete_mathmatics.class);
+                        intent2.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        view.getContext().startActivity(intent2);
+                    } else if(vHolder.getAdapterPosition()==3){
+                        Intent intent2 = new Intent(view.getContext(), Pop_db.class);
+                        intent2.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        view.getContext().startActivity(intent2);
+                    } else if(vHolder.getAdapterPosition()==4){
+                        Intent intent2 = new Intent(view.getContext(), Pop_os.class);
+                        intent2.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        view.getContext().startActivity(intent2);
+                    } else if(vHolder.getAdapterPosition()==5){
+                        Intent intent2 = new Intent(view.getContext(), Pop_android.class);
+                        intent2.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        view.getContext().startActivity(intent2);
+                    } else if(vHolder.getAdapterPosition()==6){
+                        Intent intent2 = new Intent(view.getContext(), Pop_nosql.class);
+                        intent2.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        view.getContext().startActivity(intent2);
+                    } else if(vHolder.getAdapterPosition()==7){
+                        Intent intent2 = new Intent(view.getContext(), Pop_ui.class);
+                        intent2.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        view.getContext().startActivity(intent2);
+                    } else if(vHolder.getAdapterPosition()==8){
+                        Intent intent2 = new Intent(view.getContext(), Pop_cpp.class);
+                        intent2.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        view.getContext().startActivity(intent2);
+                    } else if(vHolder.getAdapterPosition()==9){
+                        Intent intent2 = new Intent(view.getContext(), Pop_ai.class);
+                        intent2.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        view.getContext().startActivity(intent2);
+                    } else if(vHolder.getAdapterPosition()==10){
+                        Intent intent2 = new Intent(view.getContext(), Pop_algo.class);
+                        intent2.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        view.getContext().startActivity(intent2);
+                    } else {
+                        Intent intent2 = new Intent(view.getContext(), Pop_ds.class);
+                        intent2.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        view.getContext().startActivity(intent2);
+                    }
+                }
             }
         });
         return vHolder;

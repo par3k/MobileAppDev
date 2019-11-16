@@ -7,7 +7,7 @@
     android:background="@color/colorPrimary">
 
     <TextView
-        android:text="Java Programming"
+        android:text="C++ Programming"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
@@ -26,13 +26,13 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginBottom="10dp"
-        android:src="@drawable/profile_cho"
+        android:src="@drawable/profile_kim3"
         android:layout_gravity="center"/>
 
     <TextView
         android:drawableStart="@drawable/ic_person_blue_24dp"
         android:drawableLeft="@drawable/ic_person_blue_24dp"
-        android:text=" Professor : Dr. Cho Seungyeon"
+        android:text=" Professor : Dr. Kim Kyungill"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
@@ -47,7 +47,7 @@
     <TextView
         android:drawableStart="@drawable/ic_query_builder_black_24dp"
         android:drawableLeft="@drawable/ic_query_builder_black_24dp"
-        android:text=" Class Time : Monday [6][7]"
+        android:text=" Class Time : Monday [2][3]"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"

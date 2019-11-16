@@ -30,6 +30,30 @@
         </activity>
         <activity android:name=".Pop"
             android:theme="@style/AppTheme.Pop"></activity>
+        <activity android:name=".Pop_java"
+            android:theme="@style/AppTheme.Pop"></activity>
+        <activity android:name=".Pop_c"
+            android:theme="@style/AppTheme.Pop"></activity>
+        <activity android:name=".Pop_discrete_mathmatics"
+            android:theme="@style/AppTheme.Pop"></activity>
+        <activity android:name=".Pop_db"
+            android:theme="@style/AppTheme.Pop"></activity>
+        <activity android:name=".Pop_os"
+            android:theme="@style/AppTheme.Pop"></activity>
+        <activity android:name=".Pop_android"
+            android:theme="@style/AppTheme.Pop"></activity>
+        <activity android:name=".Pop_ui"
+            android:theme="@style/AppTheme.Pop"></activity>
+        <activity android:name=".Pop_nosql"
+            android:theme="@style/AppTheme.Pop"></activity>
+        <activity android:name=".Pop_cpp"
+            android:theme="@style/AppTheme.Pop"></activity>
+        <activity android:name=".Pop_ai"
+            android:theme="@style/AppTheme.Pop"></activity>
+        <activity android:name=".Pop_algo"
+            android:theme="@style/AppTheme.Pop"></activity>
+        <activity android:name=".Pop_ds"
+            android:theme="@style/AppTheme.Pop"></activity>
     </application>
 
 </manifest>
