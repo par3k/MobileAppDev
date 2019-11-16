@@ -95,8 +95,11 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
                     android:textColor="#000000"
-                    android:textSize="13dp"></TextView>
+                    android:textSize="13dp"
+                    android:text=" Discrete mathmatics is the foundation of computer science and software engineer. This course provides and overview of the branch of mathematics commonly known as discrete mathematics. It is intended for Computer Science and Software Engineer majors."></TextView>
             </LinearLayout>
         </ScrollView>
     </LinearLayout>

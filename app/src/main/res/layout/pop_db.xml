@@ -95,8 +95,11 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
                     android:textColor="#000000"
-                    android:textSize="13dp"></TextView>
+                    android:textSize="13dp"
+                    android:text=" Database System is a core course for sophomores majoring in Software Engineering and other related disciplines. It aims to cultivate students' basic concepts, modeling ideas and standardized design methods of database systems to understand the latest developments in database technology, So as to have the ability to design and implement the database application system independently, enhance the ability to run and maintain the database system, enhance the ability to retrieve English technical literature and read English professional and technical information, improve the international communication level and the ability of autonomous learning advanced technology, students will be trained to become an internationally competitive elite software talent."></TextView>
             </LinearLayout>
         </ScrollView>
     </LinearLayout>

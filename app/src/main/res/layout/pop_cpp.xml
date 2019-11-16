@@ -95,8 +95,11 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
                     android:textColor="#000000"
-                    android:textSize="13dp"></TextView>
+                    android:textSize="13dp"
+                    android:text=" It is one of the most widely used programming languages. You find C++ applications everywhere from the bottom of the oceans to the surface of Mars. It is good for coding back end and front end applications with multilayered architecture, in real time environment. It is an object oriented programming languages, and it directly supports the key concepts and techniques used in real-world software. This course combines a component that teaches programming using C++ language with on that teaches developing Windows Programming and Winsock Application."></TextView>
             </LinearLayout>
         </ScrollView>
     </LinearLayout>

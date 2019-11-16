@@ -95,8 +95,11 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
                     android:textColor="#000000"
-                    android:textSize="13dp"></TextView>
+                    android:textSize="13dp"
+                    android:text=" Within the rapid development of computer technology, especially with internet and big data, traditional relational database can not satisfy the requirement of the large scale data processing. There is the big challenge of how to deal with hugh amount of non-structured data.\n In this class, we will introduce the database design and query for semi-structured data and unstructured data, by the real use case in enterprises.\n Practices is designed to let the students to manage modern non-relational database systems. The scenarios, requirements and data are all from real use case of enterprises."></TextView>
             </LinearLayout>
         </ScrollView>
     </LinearLayout>

@@ -95,8 +95,11 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
                     android:textColor="#000000"
-                    android:textSize="13dp"></TextView>
+                    android:textSize="13dp"
+                    android:text=" A practical grounding in artificial intelligence (AI) and its business applications, equipping you with the knowledge and confidence you need to transform your organization into an innovative, efficient, and sustainable company of the future.\n The ability to lead informed, strategic decision-making and augment business performance by integrating key AI management and leadership insights into the way your organization operates."></TextView>
             </LinearLayout>
         </ScrollView>
     </LinearLayout>

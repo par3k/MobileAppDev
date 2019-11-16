@@ -95,8 +95,11 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
                     android:textColor="#000000"
-                    android:textSize="13dp"></TextView>
+                    android:textSize="13dp"
+                    android:text=" This course is a basic specialized which designed for undergraduates majoring in software engineering. The algorithm plays an important role in computing science and computing practices. The purpose of this course is to explain the solution of practical problems for computer application, and teach the basic principles, methods and techniques of algorithm design and analysis, and cultivate students' ability of analysis and understanding for algorithm complexity. Firstly, it introduces the definition of computational complexity and basic methods of algorithm analysis, accourding to the representative non-numerical problems in the fields of computer science and software engineering, then it introduces several important algorithm design methods, which are divide and conquer method, dynamic programming method, greedy method, retrospective search method, brance and bound method and algorithm design practice and so on. It can both enable students to grasp various algorithms and grasp the basic methods and techniques of algorithm analysis."></TextView>
             </LinearLayout>
         </ScrollView>
     </LinearLayout>

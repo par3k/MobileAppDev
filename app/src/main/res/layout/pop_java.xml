@@ -95,8 +95,11 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
                     android:textColor="#000000"
-                    android:textSize="13dp"></TextView>
+                    android:textSize="13dp"
+                    android:text=" This course is a specialty major compulsory course of sotware engineering. The course is practical and innovative. The course has a total of 32 lecture hours, and it is accompanied by a corresponding practical Course.\n This course reaches the main technology and programming ideas of object-oriented programming, including the introduction of Java language, object-oriented programming concepts and programming techniques, exception handling, input/output streams, collections framework, multi-threaded, graphical user interface, network programming and other content."></TextView>
             </LinearLayout>
         </ScrollView>
     </LinearLayout>

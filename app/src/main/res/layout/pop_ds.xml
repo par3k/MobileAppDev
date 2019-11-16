@@ -95,8 +95,11 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
                     android:textColor="#000000"
-                    android:textSize="13dp"></TextView>
+                    android:textSize="13dp"
+                    android:text=" Data Structure is a compulsory basic course for students of software engineering professionals. This course provides foundation for other courses such as Database System, Operating System, Software Engineering, etc. To design an algorithm of high- efficiency, we must study the characteristics of data as well as the relationship between them and the corresponding storage representations. Data structure is a discipline that will study computer operation objects of non-numerical computation problems as well as their relationship and operation.\n This course introduces avariety of commonly used data structures, such as the linear lists, stacks, queues, strings, arrays, trees, binary trees, and graphic and other basic types of data structures and their application scopes, as well as a variety of algorithm of sort and search, focusing on time and space analysis and comparison."></TextView>
             </LinearLayout>
         </ScrollView>
     </LinearLayout>

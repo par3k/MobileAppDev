@@ -95,8 +95,11 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
                     android:textColor="#000000"
-                    android:textSize="13dp"></TextView>
+                    android:textSize="13dp"
+                    android:text=" Operating System is a basic course for software engineering students, and also a specialty course for software engineering major. The course include much theory, which contains the basic structure and theory of the operating system, design ideas and mothods, mainly the basic concepts of operating system, principles and implementaiton of technology. The teaching content include processor management, process management, memory management, file management, input and output system etc."></TextView>
             </LinearLayout>
         </ScrollView>
     </LinearLayout>

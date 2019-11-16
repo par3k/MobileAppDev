@@ -95,8 +95,11 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
                     android:textColor="#000000"
-                    android:textSize="13dp"></TextView>
+                    android:textSize="13dp"
+                    android:text=" As the first basic course in the software engineering major, Programming Fundamentals provides the basic knowledge on computers and programming to lay a solid foundation for the freshmen to go on with the related study in the major.\n Through the study in the course, the students will pick up the basic knowledge of the structure of hardware and software, understand the computer dynamic mechanism and master the related concepts on programming. They will acquire the methods of structured programming, practice the skills of programming and observe the programming norms. They will grasp the data types, operators, expressions, control structures, functions, arrays, pointers, structures, files and linked lists of C language programs. They will also be able to debug program independently, thus possess certain ability to solve practical problems."></TextView>
             </LinearLayout>
         </ScrollView>
     </LinearLayout>

@@ -95,8 +95,11 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
                     android:textColor="#000000"
-                    android:textSize="13dp"></TextView>
+                    android:textSize="13dp"
+                    android:text=" As an elective course for students majoring in software engineering, the course describes how to design user friendly interface and how to evaluate and enhance the usability of these interfaces. From the course, the students will grasp the related theories on the desin of the interfaces and learn to create the interface with a rapid-prototyping programming language. They will learn to design the user friendly interface of high usability and master the major techniques to evaluate the usability of interfaces.\n As an essential course to successful software design, this course combines the components of programming interactive user interfaces with the methods to evaluate and improve the usability of those interfaces."></TextView>
             </LinearLayout>
         </ScrollView>
     </LinearLayout>
