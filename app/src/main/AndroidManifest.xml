@@ -6,13 +6,13 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="SW Learning"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:icon="@mipmap/korea_icon"
+        android:label="Korea Univ."
+        android:roundIcon="@mipmap/korea_icon_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
         <activity android:name=".Splashscreen"
-            android:label="@string/app_name">
+            android:label="Korea Univ.">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
