@@ -3,7 +3,6 @@
 Beijing Jiaotong University
 Software Engineering
 
-==========================================
 1. 
 Mobile Application Development class
 Assignment Repository
@@ -11,8 +10,6 @@ Assignment Repository
 Team Leader : Park Hoijai (18309002)
 Team mate : Lee Eunsoo (18309007)
 
-
-===========================================
 2.
 Mobile Application Development class
 Final project Repository
