@@ -1,7 +1,6 @@
-# MobileAppDev
+# Mobile Application Development
 
-Beijing Jiaotong University
-Software Engineering
+Beijing Jiaotong University Software Engineering
 
 # Assignment team
 
