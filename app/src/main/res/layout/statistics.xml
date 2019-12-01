@@ -40,6 +40,17 @@
                 android:textColorHint="#ffffff"
                 android:textStyle="bold"/>
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="credit"
+                android:id="@+id/courseCredit"
+                android:layout_gravity="center"
+                android:padding="3dp"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:textStyle="bold"/>
+
 
         </LinearLayout>
 

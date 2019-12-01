@@ -59,10 +59,12 @@ public class StatisticsCourseListAdapter extends BaseAdapter {
     public View getView(final int i, View view, ViewGroup viewGroup) {
         View v = View.inflate(context, R.layout.statistics, null);
         TextView courseTitle = (TextView) v.findViewById(R.id.courseTitle);
+        TextView courseCredit = (TextView) v.findViewById(R.id.courseCredit);
         TextView coursePersonnel = (TextView) v.findViewById(R.id.coursePersonnel);
         TextView courseRate = (TextView) v.findViewById(R.id.courseRate);
 
         courseTitle.setText(courseList.get(i).getCourseTitle());
+        courseCredit.setText("<"+courseList.get(i).getCourseCredit()+" credits>");
         if(courseList.get(i).getCoursePersonnel()==0){
             coursePersonnel.setText("Unlimited");
             courseRate.setText("");

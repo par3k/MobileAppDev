@@ -146,6 +146,7 @@ public class StatisticsFragment extends Fragment {
                 int count = 0;
                 int courseID;
                 String courseTitle;
+                int courseCredit;
                 int coursePersonnel;
                 int courseRival;
 
@@ -154,10 +155,11 @@ public class StatisticsFragment extends Fragment {
                     JSONObject object = jsonArray.getJSONObject(count);
                     courseID = object.getInt("courseID");
                     courseTitle = object.getString("courseTitle");
+                    courseCredit = object.getInt("courseCredit");
                     coursePersonnel = object.getInt("coursePersonnel");
                     courseRival = object.getInt("COUNT(M_SCHEDULE.courseID)");
                     totalCredit += object.getInt("courseCredit");
-                    courseList.add(new Course(courseID,courseTitle,coursePersonnel,courseRival));
+                    courseList.add(new Course(courseID,courseTitle,courseCredit,coursePersonnel,courseRival));
                     count++;
                 }
                 adapter.notifyDataSetChanged();
