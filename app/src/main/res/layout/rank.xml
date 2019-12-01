@@ -5,18 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <Button
-        android:layout_width="80dp"
-        android:layout_height="40dp"
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="30dp"
         android:layout_gravity="center"
-        android:gravity="center"
-        android:text="Remove"
-        android:background="@color/colorPrimary"
+        android:text="1st"
+        android:background="@color/colorWinner"
         android:textColor="#ffffff"
         android:textSize="15dp"
-        android:id="@+id/deleteButton"
+        android:id="@+id/rankTextView"
         android:layout_marginRight="10dp"
-        android:layout_marginLeft="5dp"/>
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -32,24 +32,32 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Course Title"
+                android:text="Course name"
                 android:id="@+id/courseTitle"
                 android:layout_gravity="center"
                 android:padding="3dp"
                 android:textColor="#ffffff"
-                android:textColorHint="#ffffff"
                 android:textStyle="bold"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="credit"
+                android:text="Credit"
                 android:id="@+id/courseCredit"
                 android:layout_gravity="center"
                 android:padding="3dp"
+                android:textColor="#ffffff"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Teacher name"
+                android:id="@+id/courseProfessor"
+                android:layout_gravity="center"
+                android:padding="3dp"
                 android:textColor="#ffffff"
-                android:textColorHint="#ffffff"
                 android:textStyle="bold"/>
+
 
 
         </LinearLayout>
@@ -63,23 +71,23 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Available : 40 / 30"
+                android:text="coursePersonnel"
                 android:id="@+id/coursePersonnel"
                 android:layout_gravity="center"
                 android:padding="3dp"
-                android:textColor="#000000"
-                android:textColorHint="#ffffff"/>
+                android:textColor="@color/colorWarning2"/>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Competition Rate : 133%"
-                android:id="@+id/courseRate"
+                android:text="Course Time"
+                android:id="@+id/courseTime"
                 android:layout_gravity="center"
                 android:padding="3dp"
-                android:textColor="@color/colorPrimaryDark"
-                android:textColorHint="#ffffff"/>
+                android:textColor="@color/colorPrimaryDark"/>
 
         </LinearLayout>
+
 
     </LinearLayout>
 

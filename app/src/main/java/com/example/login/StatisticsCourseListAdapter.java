@@ -2,6 +2,7 @@ package com.example.login;
 
 import android.content.Context;
 import android.os.AsyncTask;
+import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -85,6 +86,47 @@ public class StatisticsCourseListAdapter extends BaseAdapter {
             }
         }
         v.setTag(courseList.get(i).getCourseID());
+
+        Button deleteButton = (Button) v.findViewById(R.id.deleteButton);
+        deleteButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                    Response.Listener<String> responseListener = new Response.Listener<String>() {
+                        @Override
+                        public void onResponse(String response) {
+                            try{
+                                final JSONObject jsonResponse = new JSONObject(response);
+                                boolean success = jsonResponse.getBoolean("success");
+
+                                if(success){
+                                    AlertDialog.Builder builder = new AlertDialog.Builder(parent.getActivity());
+                                    AlertDialog dialog = builder.setMessage("Delete your course")
+                                            .setPositiveButton("OK",null)
+                                            .create();
+                                    dialog.show();
+
+                                    StatisticsFragment.totalCredit -= courseList.get(i).getCourseCredit();
+                                    StatisticsFragment.credit.setText(StatisticsFragment.totalCredit + " credit(s)");
+                                    courseList.remove(i);
+                                    notifyDataSetChanged();
+
+                                } else {
+                                    AlertDialog.Builder builder = new AlertDialog.Builder(parent.getActivity());
+                                    AlertDialog dialog = builder.setMessage("Can not Remove your course")
+                                            .setNegativeButton("Try again",null)
+                                            .create();
+                                    dialog.show();
+                                }
+                            } catch(Exception e){
+                                e.printStackTrace();
+                            }
+                        }
+                    };
+                    DeleteRequest deleteRequest = new DeleteRequest(userID,courseList.get(i).getCourseID() + "",responseListener);
+                    RequestQueue queue = Volley.newRequestQueue(parent.getActivity());
+                    queue.add(deleteRequest);
+            }
+        });
         return v;
     }
 }

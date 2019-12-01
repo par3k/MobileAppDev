@@ -64,6 +64,15 @@ public class Course { // 코스 데이터를 불러올 수 있게 하는 것
         this.courseRival = courseRival;
     }
 
+    public Course(int courseID, String courseTitle, int courseCredit, String courseProfessor, String courseTime, int coursePersonnel) {
+        this.courseID = courseID;
+        this.courseTitle = courseTitle;
+        this.courseCredit = courseCredit;
+        this.courseProfessor = courseProfessor;
+        this.courseTime = courseTime;
+        this.coursePersonnel = coursePersonnel;
+    }
+
     public int getCoursePersonnel() { return coursePersonnel; }
     public void setCoursePersonnel(int coursePersonnel) { this.coursePersonnel = coursePersonnel; }
 

@@ -19,6 +19,13 @@
         <item>2018</item>
         <item>2019</item>
     </string-array>
-    
+
+
+    <string-array name="rank">
+        <item>ByEntire</item>
+        <item>Male prefer</item>
+        <item>Female prefer</item>
+
+    </string-array>
     
 </resources>

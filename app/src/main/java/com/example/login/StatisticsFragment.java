@@ -11,11 +11,15 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
+import org.w3c.dom.Text;
 
 import java.io.BufferedReader;
 import java.io.InputStream;
@@ -81,7 +85,16 @@ public class StatisticsFragment extends Fragment {
     private ListView courseListView;
     private StatisticsCourseListAdapter adapter;
     private List<Course> courseList;
-    int totalCredit = 0;
+
+    public static int totalCredit = 0;
+    public static TextView credit;
+
+    private ArrayAdapter rankAdapter;
+    private Spinner rankSpinner;
+
+    private ListView rankListView;
+    private RankListAdapter rankListAdapter;
+    private List<Course> rankList;
 
 
     @Override
@@ -92,7 +105,115 @@ public class StatisticsFragment extends Fragment {
         adapter = new StatisticsCourseListAdapter(getContext().getApplicationContext(), courseList, this);
         courseListView.setAdapter(adapter);
         new BackgroundTask().execute();
+
+        totalCredit =0;
+        credit = (TextView) getView().findViewById(R.id.totalCredit);
+
+        rankSpinner = (Spinner) getView().findViewById(R.id.rankSpinner);
+        rankAdapter = ArrayAdapter.createFromResource(getActivity(), R.array.rank, R.layout.spinner_item);
+        rankSpinner.setAdapter(rankAdapter);
+        rankSpinner.setPopupBackgroundResource(R.color.colorPrimary);
+        rankListView = (ListView) getView().findViewById(R.id.rankListView);
+        rankList = new ArrayList<Course>();
+        rankListAdapter = new RankListAdapter(getContext().getApplicationContext(), rankList, this);
+        rankListView.setAdapter(rankListAdapter);
+        new ByEntire().execute();
+        rankSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                if (rankSpinner.getSelectedItem().equals("ByEntire")) {
+
+                } else if (rankSpinner.getSelectedItem().equals("Male prefer")){
+
+                } else if (rankSpinner.getSelectedItem().equals("Female prefer")) {
+
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
+        });
     }
+
+
+    class ByEntire extends AsyncTask<Void, Void, String> {
+        String target ;
+        ProgressDialog dialog = new ProgressDialog(getActivity());
+
+        @Override
+        protected void onPreExecute(){
+
+            try{
+                target = "https://bakhoijae.cafe24.com/ByEntire.php";
+                dialog.setMessage("Loading..");
+                dialog.show();
+            }catch (Exception e){
+                e.printStackTrace();
+            }dialog.dismiss();
+        }
+
+        @Override
+        protected String doInBackground(Void... voids) {
+            try{
+
+                URL url = new URL(target);
+                HttpURLConnection httpURLConnection = (HttpURLConnection)url.openConnection();
+                InputStream inputStream = httpURLConnection.getInputStream();
+                BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
+                String temp;
+                StringBuilder stringBuilder = new StringBuilder();
+                while ((temp = bufferedReader.readLine())!=null){
+                    stringBuilder.append(temp + "\n");
+                }
+                bufferedReader.close();
+                inputStream.close();
+                httpURLConnection.disconnect();
+                return stringBuilder.toString().trim();
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+            return null;
+        }
+
+        @Override
+        public void onProgressUpdate(Void...values){
+            super.onProgressUpdate();
+        }
+
+        @Override
+        public void onPostExecute(String result){
+            try{
+                JSONObject jsonObject = new JSONObject(result);
+                JSONArray jsonArray = jsonObject.getJSONArray("response");
+                int count = 0;
+                int courseID;
+                String courseTitle;
+                String courseProfessor;
+                int courseCredit;
+                int coursePersonnel;
+                String courseTime;
+
+                while(count<jsonArray.length()){
+                    JSONObject object = jsonArray.getJSONObject(count);
+                    courseID = object.getInt("courseID");
+                    courseTitle = object.getString("courseTitle");
+                    courseCredit = object.getInt("courseCredit");
+                    courseProfessor = object.getString("courseProfessor");
+                    courseTime = object.getString("courseTime");
+                    coursePersonnel = object.getInt("coursePersonnel");
+                    rankList.add(new Course(courseID, courseTitle, courseCredit, courseProfessor, courseTime, coursePersonnel));
+                    count++;
+                }
+                rankListAdapter.notifyDataSetChanged();
+            }catch(Exception e){
+                e.printStackTrace();
+            }
+        }
+    }
+
+
 
     class BackgroundTask extends AsyncTask<Void, Void, String> {
         String target ;
@@ -158,13 +279,13 @@ public class StatisticsFragment extends Fragment {
                     courseCredit = object.getInt("courseCredit");
                     coursePersonnel = object.getInt("coursePersonnel");
                     courseRival = object.getInt("COUNT(M_SCHEDULE.courseID)");
-                    totalCredit += object.getInt("courseCredit");
+                    int courseCredit2 = object.getInt("courseCredit");
+                    totalCredit += courseCredit2;
                     courseList.add(new Course(courseID,courseTitle,courseCredit,coursePersonnel,courseRival));
                     count++;
                 }
                 adapter.notifyDataSetChanged();
-                TextView credit = (TextView) getView().findViewById(R.id.totalCredit);
-                credit.setText(totalCredit + " credits");
+                credit.setText(totalCredit + " credit(s)");
             }catch(Exception e){
                 e.printStackTrace();
             }

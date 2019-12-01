@@ -36,7 +36,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="xx credits"
+            android:text="0 credit(s)"
             android:textColor="@color/colorPrimaryDark"
             android:textStyle="bold"
             android:id="@+id/totalCredit"/>
@@ -49,11 +49,10 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp">
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="#ffffff"
+        android:layout_margin="10dp">
 
         <ListView
             android:layout_width="match_parent"
@@ -61,7 +60,56 @@
             android:id="@+id/analysisListView"
             android:divider="#ffffff"
             android:dividerHeight="10dp"
-            android:padding="5dp"></ListView>
+            android:padding="5dp">
+
+        </ListView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center"
+        android:padding="2dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Course Preference : "
+            android:textColor="#ffffff"
+            android:textStyle="bold"/>
+
+        <Spinner
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/rankSpinner">
+
+        </Spinner>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:layout_margin="10dp">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rankListView"
+            android:divider="#ffffff"
+            android:dividerHeight="10dp"
+            android:padding="5dp">
+
+        </ListView>
 
     </LinearLayout>
 
