@@ -108,6 +108,7 @@ public class ClassListAdapter extends RecyclerView.Adapter<ClassListAdapter.View
         TextView classnameText;
         Button detailButton;
         ImageView img;
+
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             classnameText = (TextView) itemView.findViewById(R.id.title_text);

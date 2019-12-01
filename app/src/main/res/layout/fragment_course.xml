@@ -8,12 +8,19 @@
 
     <!-- TODO: Update blank fragment layout -->
     <RadioGroup
-        android:layout_width="200dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:id="@+id/courseUniversityGroup"
         android:layout_gravity="center_horizontal"
         android:orientation="horizontal"
         android:layout_marginTop="10dp">
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Basic"
+            android:id="@+id/basic"/>
 
         <RadioButton
             android:layout_width="0dp"
