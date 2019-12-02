@@ -55,7 +55,7 @@ public class RankListAdapter extends BaseAdapter {
         TextView courseProfessor = (TextView) v.findViewById(R.id.courseProfessor);
         TextView courseTime = (TextView) v.findViewById(R.id.courseTime);
 
-        rankTextView.setText("Rank " + (i+1));
+        rankTextView.setText(" "+(i+1)+" ");
         if(i != 0){
             rankTextView.setBackgroundColor(parent.getResources().getColor(R.color.colorPrimary));
         }

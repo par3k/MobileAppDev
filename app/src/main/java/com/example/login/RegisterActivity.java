@@ -148,7 +148,7 @@ public class RegisterActivity extends AppCompatActivity { //회원가입창 구�
                          }
                      }
                  };
-                 RegisterRequest registerRequest = new RegisterRequest(userID,userPassword,userEmail,userGender,responseListener);
+                 RegisterRequest registerRequest = new RegisterRequest(userID,userPassword,userGender,userEmail,responseListener);
                  RequestQueue queue = Volley.newRequestQueue(RegisterActivity.this);
                  queue.add(registerRequest);
              }
