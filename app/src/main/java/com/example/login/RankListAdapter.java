@@ -5,6 +5,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AlertDialog;
@@ -49,6 +50,7 @@ public class RankListAdapter extends BaseAdapter {
     public View getView(final int i, View view, ViewGroup viewGroup) {
         View v = View.inflate(context, R.layout.rank, null);
         TextView rankTextView = (TextView) v.findViewById(R.id.rankTextView);
+        LinearLayout rankLinearLayout = (LinearLayout) v.findViewById(R.id.rankLinearLayout);
         TextView courseTitle = (TextView) v.findViewById(R.id.courseTitle);
         TextView courseCredit = (TextView) v.findViewById(R.id.courseCredit);
         TextView coursePersonnel = (TextView) v.findViewById(R.id.coursePersonnel);
@@ -58,6 +60,7 @@ public class RankListAdapter extends BaseAdapter {
         rankTextView.setText(" "+(i+1)+" ");
         if(i != 0){
             rankTextView.setBackgroundColor(parent.getResources().getColor(R.color.colorPrimary));
+            rankLinearLayout.setBackgroundColor(parent.getResources().getColor(R.color.colorPrimary));
         }
 
         courseTitle.setText(courseList.get(i).getCourseTitle());

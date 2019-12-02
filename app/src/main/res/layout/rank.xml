@@ -28,7 +28,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:background="@color/colorPrimary">
+            android:background="@color/colorWinner"
+            android:id="@+id/rankLinearLayout">
 
             <TextView
                 android:layout_width="wrap_content"
