@@ -1,4 +1,4 @@
-# Mobile Application Development
+# Mobile Application Development Class
 
 Beijing Jiaotong University Software Engineering
 
