@@ -2,12 +2,12 @@
 
 Beijing Jiaotong University Software Engineering
 
-# Assignment team
+# Assignment team (Finish 12/22)
 
 Team Leader : Park Hoijai (18309002)
 Team mate1 : Lee Eunsoo (18309007)
 
-# Final project team
+# Final project team (Finish 12/22)
 
 Team Leader : Park Hoijai (18309002)
 Team mate1 : Lee Eunsoo (18309007)
