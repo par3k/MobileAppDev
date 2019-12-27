@@ -1,6 +1,6 @@
 # Mobile Application Development Class
 
-Beijing Jiaotong University Software Engineering
+Beijing Jiaotong University Software Engineering School
 
 # Assignment team (Finish 12/22)
 
