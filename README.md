@@ -1,6 +1,7 @@
 # Mobile Application Development Class
 
 Beijing Jiaotong University Software Engineering School
+* Project Based on Android Studio (JAVA), PHP, MySQL
 
 # Assignment team (Finish 12/22)
 
