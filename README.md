@@ -13,7 +13,7 @@ It has 7 functions supports :
 * Check course List
 * Add/Remove class on the Time table
 * Calculate user's total credit in this semester
-* Competitive ratio based on the number of participants in the class</br>
+* Competitive ratio based on the number of participants in the class</br></br>
 
 Here is the Demo video :</br>
 https://youtu.be/Y4FehQxWeq4
