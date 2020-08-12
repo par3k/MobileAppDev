@@ -1,5 +1,6 @@
 # Mobile Application Development
-BJTU Software Engineering School Mobile Application Final Project</br>
+Beijing Jiaotong University Software Engineering School</br>
+Mobile Application Final Project name : +82 People</br>
 
 * This application was inspired by 'Everytime', a famous Korean student support application.
 * Project was based on Java, PHP and MySQL Database system.
