@@ -15,5 +15,5 @@ It has 7 functions supports :
 * Calculate user's total credit in this semester
 * Competitive ratio based on the number of participants in the class</br></br>
 
-Here is the Demo video :</br>
+Here is a Demo video :</br>
 https://youtu.be/Y4FehQxWeq4
