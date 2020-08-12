@@ -1,6 +1,5 @@
-# Mobile Application Development
+# Mobile Application Final Project name : +82 People
 Beijing Jiaotong University Software Engineering School</br>
-Mobile Application Final Project name : +82 People</br>
 
 * This application was inspired by 'Everytime', a famous Korean student support application.
 * Project was based on Java, PHP and MySQL Database system.
