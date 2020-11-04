@@ -1,10 +1,9 @@
 # Mobile Application Final Project name : +82 People
-* Here is a Demo video :</br>
-https://youtu.be/Y4FehQxWeq4 </br>
 Beijing Jiaotong University Software Engineering School</br></br>
 18309002 Park Hoijai - Project Manager, FE, BE</br>
-18309007 Lee Eunsoo - DB designer, develope PHP api, BE</br>
-
+18309007 Lee Eunsoo - DB designer, develope PHP api, BE</br></br>
+* Here is a Demo video :</br>
+https://youtu.be/Y4FehQxWeq4 </br></br>
 * This application was inspired by 'Everytime', a famous Korean student support application.
 * Project was based on Java, PHP and MySQL Database system.
 
